@@ -10,9 +10,9 @@ from products.views import (
 
 app_name = 'products'
 urlpatterns = [
-    path('', CreateAPIView.as_view(), name='create'),
-    path('', ListAPIView.as_view(), name='list'),
-    path('<int:id>', RetrieveAPIView.as_view(), name='retrieve'),
-    path('<int:id>', UpdateAPIView.as_view(), name='update'),
-    path('<int:id>', DestroyAPIView.as_view(), name='destroy'),
+    path('create', CreateAPIView.as_view(), name='create'),
+    path('list', ListAPIView.as_view(), name='list'),
+    path('retrieve/<int:id>', RetrieveAPIView.as_view(), name='retrieve'),
+    path('update/<int:id>', UpdateAPIView.as_view(), name='update'),
+    path('destroy/<int:id>', DestroyAPIView.as_view(), name='destroy'),
 ]
