@@ -1,4 +1,4 @@
 from products.repo.models import (
-    CategoryModel,
+    ProductCategoryModel,
     ProductModel,
 )
